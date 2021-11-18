@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Transport extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'type'];
+    protected $fillable = ['name', 'type', 'color'];
     public function stops() {
        return $this->belongsToMany(Stop::class);
     }

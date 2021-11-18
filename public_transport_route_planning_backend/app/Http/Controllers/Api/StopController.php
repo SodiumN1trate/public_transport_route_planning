@@ -7,29 +7,6 @@ use App\Http\Requests\StopRequest;
 use App\Http\Resources\StopResource;
 use App\Models\Stop;
 
-// Set data to DB from JSON.
-//$path = storage_path(). "/json/transport_lines.json";
-//$json = json_decode(file_get_contents($path));
-//foreach ($json->lines as $key) {
-//    $new_tranpsort = Transport::create([
-//        "name" => $key->name,
-//        "type" => $key->type
-//    ]);
-//    foreach ($key->stops as $stops) {
-//        if (Stop::where('name', '=', $stops->name)->count() < 1) {
-//            $new_stop = Stop::create([
-//                "name" => $stops->name,
-//            ]);
-//            $new_tranpsort->stops()->attach($new_stop->id);
-//        } else {
-//            $new_tranpsort->stops()->attach(Stop::where('name', '=', $stops->name)->first());
-//        }
-//    }
-//}
-
-
-
-
 class StopController extends Controller
 {
     /**

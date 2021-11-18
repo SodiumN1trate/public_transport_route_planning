@@ -1,0 +1,21 @@
+#wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-box,upload-box {
+    display: grid;
+    text-align: center;
+    width: 10%;
+    grid-template-columns: auto;
+    margin-left: auto;
+    gap: 10px;
+    margin-right: auto;
+}
+
+.upload-box {
+    width: auto;
+    text-align: center;
+}

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/admin', [AdminController::class, 'admin_login']);
+Route::post('/admin/login', [AdminController::class, 'login_check']);
+Route::get('/admin_profile', [AdminController::class, 'admin_profile']);
+Route::post('/admin/upload_json', [AdminController::class, 'upload_json']);

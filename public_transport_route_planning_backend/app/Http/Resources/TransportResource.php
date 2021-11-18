@@ -18,6 +18,7 @@ class TransportResource extends JsonResource
             'id'=>$this->id,
             'name'=>$this->name,
             'type'=>$this->type,
+            'color'=>$this->color,
             'stops'=> StopResource::collection($this->stops)
         ];
     }

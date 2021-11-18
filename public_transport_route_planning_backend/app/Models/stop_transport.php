@@ -9,4 +9,5 @@ class stop_transport extends Model
 {
     use HasFactory;
     protected $fillable = ['transport_id', 'stop_id'];
+    public $table = "stop_transport";
 }
